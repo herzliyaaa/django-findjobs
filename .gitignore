@@ -1,0 +1,74 @@
+# Python Bytecode
+*.pyc
+*.pyo
+__pycache__/
+**/__pycache__
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# Django-specific
+*.log
+*.pot
+*.py[cod]
+*.sqlite3
+db.sqlite3
+*.pkl
+
+# Media and Static Files
+/media/
+staticfiles/
+static/
+*.sass-cache
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*.bak
+*.orig
+*.tmp
+*~
+
+# Test and Debug
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Environment Variables
+.env
+.env.*
+
+# pip and other dependency management
+pip-log.txt
+pip-delete-this-directory.txt
+
+# macOS
+.DS_Store
+
+# Linux
+*.~lock.*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Docker
+*.pid
+*.seed
+*.tmp
+*.log
+*.env
+__pycache__/
+
+
+db.sqlite3
+*.sqlite3
