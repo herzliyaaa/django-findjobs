@@ -4,4 +4,5 @@ from .models import Jobs
 class JobSerializer(serializers.ModelSerializer):
     class Meta:
         model = Jobs
-        fields = '__all__'  # Include all fields of the Jobs model
+        fields = ['id', 'title', 'created_on', 'posted_by'] 
+        read_only_fields = ['id', 'created_on'] 

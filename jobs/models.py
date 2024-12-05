@@ -9,9 +9,9 @@ class Jobs(models.Model):
     created_on = models.DateTimeField(default=timezone.now)
     last_modified = models.DateTimeField(auto_now=True)
 
-    def __str__(self)  -> str:
+    def __str__(self):
         return self.title
     
     class Meta:
-        verbose_name = "Job"  # Singular name
-        verbose_name_plural = "Jobs"  # Correct plural name
+        verbose_name = "Job" 
+        verbose_name_plural = "Jobs" 
