@@ -25,7 +25,30 @@ SECRET_KEY = 'django-insecure-dhtq8134j!+)up+a=$jg$5ismkb77)*usc2vc%)v07oo)(5(gv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+CORS_ALLOW_ALL_ORIGINS = True
+# Allow specific domains to access your API
+CORS_ALLOWED_ORIGINS = [
+    'http://127.0.0.1:8000',
+]
+# Allow specific HTTP methods
+CORS_ALLOW_METHODS = [
+    "GET",
+    "POST",
+    "PUT",
+    "PATCH",
+    "DELETE",
+    "OPTIONS",
+]
+# Allow specific HTTP headers
+CORS_ALLOW_HEADERS = [
+    "Authorization",
+    "Content-Type",
+]
+# Allow cookies to be included in cross-origin requests
+CORS_ALLOW_CREDENTIALS = True
+# Set the maximum age of the CORS preflight request cache
+CORS_MAX_AGE = 86400  # 24 hours
 
 
 # Application definition
@@ -117,7 +140,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Manila'
 
 USE_I18N = True
 
